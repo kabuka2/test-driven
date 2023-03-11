@@ -1,0 +1,26 @@
+{
+    "name": "kabuka/home_work",
+    "description": "test_work",
+    "autoload": {
+        "psr-4": {
+            "app\\": "\\app",
+            "controller\\": "\\сontrollers",
+            "models\\": "\\models",
+            "repositories\\": "\\repositories"
+        },
+        "files": [
+            "useful_features.php"
+        ]
+    },
+    "config": {
+        "platform": {
+            "php": "7.4.7"
+        }
+    },
+
+    "require": {
+        "twig/twig": "^3.0",
+        "illuminate/database": "^8.83",
+        "illuminate/events": "^8.83"
+    }
+}
