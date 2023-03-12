@@ -18,14 +18,14 @@ return  [
         'path_to_save_files' => __DIR__.DIRECTORY_SEPARATOR.'files_save'.DIRECTORY_SEPARATOR,
         'dist' => [
             'css' => [
-                'https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css',
                 '../css/main.css',
-                'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css',
+
             ],
             'js' => [
-                'https://code.jquery.com/jquery-3.6.3.min.js',
-                'https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js',
                 '../js/main.js',
+            ],
+            'fonts' => [
+                '../fonts/bootstrap-icons.woff'
             ],
         ],
         'view'=> [
