@@ -1,3 +1,7 @@
+import $ from 'jquery';
+import 'popper.js/dist/popper.js';
+import 'bootstrap/dist/js/bootstrap.min.js';
+import 'bootstrap/dist/js/bootstrap.bundle.min';
 
     $(document).ready(function () {
 
