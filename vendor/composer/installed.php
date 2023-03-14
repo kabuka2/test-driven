@@ -3,7 +3,7 @@
         'name' => 'kabuka/home_work',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => '060f6bddff02e9605b559a88b6408ef39f56c2b8',
+        'reference' => '3f355d817eef5ac7f6b8e8ebfa680f76c540ce78',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -103,7 +103,7 @@
         'kabuka/home_work' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => '060f6bddff02e9605b559a88b6408ef39f56c2b8',
+            'reference' => '3f355d817eef5ac7f6b8e8ebfa680f76c540ce78',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
