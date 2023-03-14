@@ -1,26 +1,22 @@
-<IfModule mod_rewrite.c>
-    <IfModule mod_negotiation.c>
-        Options -MultiViews -Indexes
-    </IfModule>
+Options +FollowSymLinks
+RewriteEngine On
 
-    RewriteEngine On
-    # Handle Authorization Header
-    RewriteCond %{HTTP:Authorization} .
-    RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
-    <FilesMatch "\.(ttf|otf|eot|woff|woff2)$">
-      Header set Content-Type "application/octet-stream"
-    </FilesMatch>
-    # Redirect Trailing Slashes If Not A Folder...
-    RewriteCond %{REQUEST_FILENAME} !-d
-    RewriteCond %{REQUEST_URI} (.+)/$
-    RewriteRule ^ %1 [L,R=301]
+# Allow access to JS files in the 'js' folder
+RewriteCond %{REQUEST_FILENAME} -f
+RewriteRule ^js/(.+)$ js/$1 [L]
 
-    # Send Requests To Front Controller...
-    RewriteCond %{REQUEST_FILENAME} !-d
-    RewriteCond %{REQUEST_FILENAME} !-f
-    RewriteRule ^ index.php [L]
+# Allow access to CSS files in the 'css' folder
+RewriteCond %{REQUEST_FILENAME} -f
+RewriteRule ^css/(.+)$ css/$1 [L]
 
-    <FilesMatch "\.(ttf|otf|eot|woff|woff2)$">
-      Header set Content-Type "application/octet-stream"
-    </FilesMatch>
-</IfModule>
+# Redirect all other requests to index.php
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . index.php [L]
+
+# Prevent execution of scripts in 'js' and 'css' folders
+<FilesMatch "\.(php|cgi|pl|py)$">
+    <If "%{REQUEST_URI} =~ m#^/?(js|css)/#">
+        Deny from all
+    </If>
+</FilesMatch>
