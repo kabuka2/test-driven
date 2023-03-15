@@ -1,5 +1,5 @@
 <?php
-namespace app\db;
+namespace app\Db;
 
 use app\interfaces\LoadClassInterface;
 use Illuminate\Database\Capsule\Manager as Capsule;

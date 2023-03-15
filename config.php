@@ -1,7 +1,7 @@
 <?php
 
-use app\template\TemplateTwig;
-use app\template\Template;
+use app\Template\TemplateTwig;
+use app\Template\Template;
 
 return  [
         'is_develop' => false,

@@ -1,9 +1,9 @@
 <?php
 
 
-namespace app\render;
+namespace app\Render;
 
-use app\interfaces\PageBuilderInterface;
+use app\Interfaces\PageBuilderInterface;
 
 class PageBuilder implements PageBuilderInterface
 {

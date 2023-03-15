@@ -2,8 +2,8 @@
 
 
 namespace app;
-use app\facade\BootstrapFacade;
-use app\config\Config;
+use app\Facade\BootstrapFacade;
+use app\Config\Config;
 
 class App
 {

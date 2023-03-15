@@ -1,11 +1,11 @@
 <?php
 
 
-namespace app\template;
-use app\traits\TemplateTrait;
+namespace app\Template;
+use app\Traits\TemplateTrait;
 use \Twig\Loader\FilesystemLoader;
 use \Twig\Environment;
-use app\interfaces\TemplateInterface;
+use app\Interfaces\TemplateInterface;
 use app\App;
 
 class TemplateTwig implements TemplateInterface

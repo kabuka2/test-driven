@@ -4,7 +4,7 @@
 namespace app;
 
 
-use app\interfaces\AppBuilderInterface;
+use app\Interfaces\AppBuilderInterface;
 
 class AppBuilderBootstrap implements AppBuilderInterface
 {

@@ -4,8 +4,8 @@
 namespace controller;
 
 
-use app\render\PageBuilder;
-use app\render\Render;
+use app\Render\PageBuilder;
+use app\Render\Render;
 
 
 class BaseController

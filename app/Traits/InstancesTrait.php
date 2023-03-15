@@ -1,7 +1,7 @@
 <?php
 
 
-namespace app\traits;
+namespace app\Traits;
 
 
 trait InstancesTrait
