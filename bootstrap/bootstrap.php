@@ -1,7 +1,7 @@
 <?php
 require_once '../vendor/autoload.php';
 
-use app\db\DataBase;
+use app\dB\DataBase;
 use Illuminate\Database\Eloquent\Model;
 $appBuild = new \app\AppBuilderBootstrap();
 
