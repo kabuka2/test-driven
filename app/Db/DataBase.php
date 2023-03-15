@@ -1,7 +1,7 @@
 <?php
 namespace app\Db;
 
-use app\interfaces\LoadClassInterface;
+use app\Interfaces\LoadClassInterface;
 use Illuminate\Database\Capsule\Manager as Capsule;
 
 class DataBase extends Capsule implements LoadClassInterface
