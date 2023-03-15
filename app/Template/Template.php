@@ -1,10 +1,10 @@
 <?php
 
 
-namespace app\template;
+namespace app\Template;
 
-use app\interfaces\TemplateInterface;
-use app\traits\TemplateTrait;
+use app\Interfaces\TemplateInterface;
+use app\Traits\TemplateTrait;
 use app\App;
 
 class Template implements TemplateInterface

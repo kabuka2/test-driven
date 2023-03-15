@@ -1,7 +1,7 @@
 <?php
 
 
-namespace app\exception;
+namespace app\Exception;
 use \Exception;
 
 class DefaultException extends Exception

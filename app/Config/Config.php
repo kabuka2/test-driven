@@ -1,12 +1,12 @@
 <?php
 
 
-namespace app\config;
+namespace app\Config;
 
 
-use app\interfaces\ConfigInterface;
-use app\traits\InstancesTrait;
-use app\traits\PropertyContainerTrait;
+use app\Interfaces\ConfigInterface;
+use app\Traits\InstancesTrait;
+use app\Traits\PropertyContainerTrait;
 
 class Config implements ConfigInterface
 {

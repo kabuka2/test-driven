@@ -3,7 +3,7 @@
 
 namespace app;
 
-use app\db\DataBase;
+use app\Db\DataBase;
 use app\Config\Config;
 
 class StaticFactoryApp
@@ -13,16 +13,15 @@ class StaticFactoryApp
         switch ($type_obj) {
             case 'config':
                 /** @var Config **/
-                $obj = Config::getInstance();
-                break;
+                return Config::getInstance();
             case 'router':
                 /**@var Router **/
-                $obj = new Router();
-                break;
+                return new Router();
             case 'data_base':
-                $obj = (new DataBase())->init();
-                break;
+               return (new DataBase())->init();
+            default:
+                throw_if(true, 'Type not found');
+
         }
-        return $obj;
     }
 }

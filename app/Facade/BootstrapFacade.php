@@ -1,7 +1,7 @@
 <?php
 
 
-namespace app\facade;
+namespace app\Facade;
 use app\StaticFactoryApp;
 
 class BootstrapFacade

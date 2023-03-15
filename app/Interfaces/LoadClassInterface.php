@@ -1,7 +1,7 @@
 <?php
 
 
-namespace app\interfaces;
+namespace app\Interfaces;
 
 
 interface LoadClassInterface
